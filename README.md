@@ -129,8 +129,8 @@ This is an open research initiative. We welcome contributions in:
 
 ## 📧 Contact & Discussion
 
-- **Research Lead**: [Your Contact Information]
-- **Discussion Forum**: [Discord/Slack Link]
+- **Research Lead**: [Ashwin](ab9168293@gmail.com)
+- **Discussion Forum**: [Discord/Slack Link](https://discord.gg/xJNHu9zbDC)
 - **Paper Updates**: [Mailing List]
 
 ---
