@@ -1,6 +1,6 @@
 # MoRE: Mixture of Recursion + Experts for Video Generation
 
-![Uploading image.png…]()
+https://miro.medium.com/v2/resize:fit:1100/format:webp/0*MN2iRmEC-_wCaHdn.jpg
 
 
 > **An ambitious research project to tackle bottlenecks in video generation AI by combining MoE and MoR transformer architectures, specifically targeting Diffusion Transformer (DiT) video models**
