@@ -128,7 +128,7 @@ This is an open research initiative. We welcome contributions in:
 - Extension to other generative modalities (3D, audio, multimodal)
 - Integration with other efficiency techniques (quantization, pruning)
 - Application to real-time video editing and enhancement
-- Development of specialized hardware for MoER architectures
+- Development of specialized hardware for MoRE architectures
 
 ## 📧 Contact & Discussion
 
