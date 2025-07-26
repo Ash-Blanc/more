@@ -48,7 +48,7 @@ Our focus is on Diffusion Transformer architectures that operate on spacetime pa
 
 Based on individual MoE and MoR benchmarks, our hybrid approach targets:
 
-| Metric | Current DiT Models | MoER Target | Potential Gain |
+| Metric | Current DiT Models | MoRE Target | Potential Gain |
 |--------|-------------------|-------------|----------------|
 | Training Cost | 100% | 10-25% | **75-90% ↓** |
 | Inference Speed | 1x | 2-4x | **2-4x ↑** |
