@@ -7,23 +7,36 @@ A fast, copy‑paste‑friendly starter to explore MoRE ideas: route tokens to *
 - **Runs in 30 seconds**: config + CLI + example, no extra glue code
 - **Copy‑paste first**: real commands and snippets below
 
-## Install (one command)
+## Install (uv — recommended)
+- Install uv:
+```bash
+curl -LsSf https://astral.sh/uv/install.sh | sh
+```
+- One-time project setup (creates .venv and installs deps):
+```bash
+uv venv && . .venv/bin/activate && uv pip install -r requirements.txt
+```
+- Fallback (pip):
 ```bash
 pip install -r requirements.txt
 ```
 
-- Requires Python 3.9+.
+Requires Python 3.9+.
 
 ## 30‑second quickstart
-- CLI (module):
+- CLI (with uv):
 ```bash
-python -m more demo --name "Ada"
+uv run -m more demo --name "Ada"
 ```
-- Routing demo:
+- Routing demo (with uv):
 ```bash
-python -m more route --scores 0.2 0.5 0.8 0.95 --threshold 0.5 --max-depth 4
+uv run -m more route --scores 0.2 0.5 0.8 0.95 --threshold 0.5 --max-depth 4
 ```
-- Programmatic:
+- Zero‑setup one‑liner (uv will provision deps on the fly):
+```bash
+uv run --with pyyaml -m more demo --name "Ada"
+```
+- Programmatic (inside repo):
 ```python
 from more.core import load_config, intro_message, assign_experts_and_recursions
 
@@ -46,7 +59,7 @@ routing:
   max_depth: 4
 ```
 ```bash
-python -m more route --scores 0.1 0.3 0.7 0.9
+uv run -m more route --scores 0.1 0.3 0.7 0.9
 # → score=0.10 -> expert=0 depth=1
 #   score=0.30 -> expert=1 depth=2
 #   score=0.70 -> expert=2 depth=3
@@ -55,7 +68,7 @@ python -m more route --scores 0.1 0.3 0.7 0.9
 
 - **Run the example script**:
 ```bash
-python examples/quickstart.py
+uv run examples/quickstart.py
 ```
 
 ## Project layout
