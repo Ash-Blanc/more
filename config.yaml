@@ -1,0 +1,5 @@
+project:
+  name: "LabStarter"
+  default_name: "Researcher"
+messages:
+  greeting: "Hello"
