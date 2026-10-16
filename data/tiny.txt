@@ -1,0 +1,5 @@
+MoRE explores adaptive computation for text.
+A shared recursive block can spend more work on difficult tokens and less work on easy tokens.
+Mixture of experts adds specialization while mixture of recursions adds a learned depth budget.
+The first prototype is intentionally small, causal, reproducible, and honest about its limits.
+Reasoning quality must be measured with held-out tasks, not assumed from routing alone.

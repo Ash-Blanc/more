@@ -1,8 +1,45 @@
+# Text-only MoRE experiment defaults. Video generation is intentionally out of scope.
 project:
   name: "MoRE"
   default_name: "Researcher"
 messages:
   greeting: "Hello"
 routing:
+  # Kept for the legacy scalar `route` demo.
   threshold: 0.5
   max_depth: 4
+
+model:
+  vocab_size: 259  # UTF-8 bytes plus PAD/BOS/EOS
+  max_seq_len: 64
+  d_model: 64
+  n_heads: 4
+  n_recursions: 3
+  n_experts: 4
+  moe_top_k: 2
+  ffn_multiplier: 2
+  dropout: 0.0
+  use_moe: true
+  use_mor: true
+  tie_embeddings: true
+  router_temperature: 1.0
+
+loss:
+  depth_balance_weight: 0.01
+  moe_balance_weight: 0.01
+  router_z_weight: 0.001
+  compute_penalty_weight: 0.0
+  target_mean_depth: 2.0
+
+train:
+  seed: 7
+  batch_size: 4
+  learning_rate: 0.0003
+  weight_decay: 0.1
+  max_steps: 20
+  eval_interval: 10
+  eval_batches: 4
+  grad_clip: 1.0
+  device: auto
+  output_dir: runs/tiny
+  train_split: 0.9
