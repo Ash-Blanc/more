@@ -1,0 +1,19 @@
+model:
+  vocab_size: 259
+  max_seq_len: 64
+  d_model: 64
+  n_heads: 4
+  n_recursions: 1
+  n_experts: 4
+  moe_top_k: 2
+  ffn_multiplier: 2
+  dropout: 0.0
+  use_moe: true
+  use_mor: false
+  tie_embeddings: true
+train:
+  batch_size: 4
+  max_steps: 20
+  eval_interval: 10
+  eval_batches: 4
+  device: auto
